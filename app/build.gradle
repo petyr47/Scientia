@@ -77,6 +77,9 @@ dependencies {
     //picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
 
+    //smooth bottom nav bar
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7'
+
 
 
 }
