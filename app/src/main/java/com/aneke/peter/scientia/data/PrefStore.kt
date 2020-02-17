@@ -21,6 +21,9 @@ class PrefStore (private val context: Context) {
     set(value) = editor.putLong(LAST_SYNC_TIME, value).apply()
     get() = sharedPref.getLong(LAST_SYNC_TIME, 0)
 
+
+    val apiKey = "14926f6cf0033ec20601efd142210575"
+
     fun shouldRefreshData() : Boolean{
         val diff = Calendar.getInstance().timeInMillis - lateSyncTime
         return diff > timeThreshold
