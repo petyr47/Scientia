@@ -11,7 +11,7 @@ data class DiscoverTopRatedNetworkResponse(
     val page: Int = 0, // 1
 
     @Json(name = "results")
-    val results: List<Result> = listOf(),
+    val movies: List<Movie> = listOf(),
 
     @Json(name = "total_pages")
     val totalPages: Int = 0,
