@@ -22,6 +22,12 @@ interface MovieDao {
     @Update
     suspend fun updateMovie(movie: Movie)
 
+    @Query("SELECT * FROM movie_table WHERE id = :id")
+    suspend fun fetchMovieForId(id: Int): List<Movie>
+
+    @Query("SELECT * FROM movie_table WHERE id = :id")
+    fun observeMovieForId(id: Int) : LiveData<List<Movie>>
+
 
     @Transaction
     suspend fun clearTableAndInsertNewMovies(movies: List<Movie>){

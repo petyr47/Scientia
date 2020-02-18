@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Scientia</string>
 
-    <!-- Api key for movie db...i know its insecure-->
-    <string name="api_key">14926f6cf0033ec20601efd142210575</string>
+    <string name="all_movies">All</string>
+    <string name="favorites">Favorites</string>
 </resources>

@@ -2,6 +2,7 @@ package com.aneke.peter.scientia.models
 
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
@@ -16,6 +17,7 @@ data class Movie(
     val backdropPath: String = "",
 
     @Json(name = "id")
+    @PrimaryKey
     val id: Int = 0,
 
     @Json(name = "original_language")

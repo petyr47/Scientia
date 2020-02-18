@@ -4,6 +4,7 @@ import com.aneke.peter.scientia.data.AppDatabase
 import com.aneke.peter.scientia.data.PrefStore
 import com.aneke.peter.scientia.movie.MovieRepository
 import com.aneke.peter.scientia.movie.MovieViewModel
+import com.aneke.peter.scientia.movie.details.DetailViewModel
 import com.aneke.peter.scientia.network.RetrofitClient
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -17,6 +18,7 @@ val dataModule = module {
 
 val viewModels = module {
     viewModel { MovieViewModel(get()) }
+    viewModel { DetailViewModel(get()) }
 }
 
 val repositories = module {
