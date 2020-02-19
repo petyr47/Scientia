@@ -2,14 +2,11 @@ package com.aneke.peter.scientia.movie.details
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.CheckBox
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
 import com.aneke.peter.scientia.R
 import com.aneke.peter.scientia.databinding.ActivityMovieDetailsBinding
-import com.aneke.peter.scientia.fetchImage
-import com.aneke.peter.scientia.models.Movie
+
 import kotlinx.android.synthetic.main.activity_movie_details.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

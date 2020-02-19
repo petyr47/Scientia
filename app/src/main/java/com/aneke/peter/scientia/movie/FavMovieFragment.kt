@@ -4,17 +4,14 @@ import android.app.Activity
 import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
-import android.util.Pair
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.app.ActivityOptionsCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
 import com.aneke.peter.scientia.R
 import com.aneke.peter.scientia.movie.details.MovieDetailsActivity
-import kotlinx.android.synthetic.main.activity_movie_details.*
 import kotlinx.android.synthetic.main.activity_movie_details.movie_item_image
 import kotlinx.android.synthetic.main.fragment_fav_movie.*
 import kotlinx.android.synthetic.main.layout_movie_item.*
